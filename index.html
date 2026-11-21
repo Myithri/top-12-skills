@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essential Tech Skills</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: sans-serif;
+    }
+    
+    .Text {
+      color: white;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .image-card {
+      position: relative;
+      width: 380px;
+      padding: 10px;
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 15px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+      transition: 0.4s ease;
+    }
+
+    .image-card:hover {
+      transform: scale(1.02);
+      border-color: #00ffff;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }
+
+    .my-image {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: 380px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 255, 255, 0.25);
+      color: rgb(220, 218, 218);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: 0.3s ease;
+      border-radius: 10px;
+      pointer-events: none;
+    }
+    
+    .image-card:hover .overlay {
+      opacity: 5;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.3rem;
+      margin-top: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="Text">Essential Tech Skills</h1>
+
+  <div class="container">
+    <div class="image-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxSu_Ru03GbbjWHS01VfV1omBwZm56UZgK7ZQWapOLD9sQjA62avoIfbD&s=10" alt="pic of Programming Languages" class="my-image">
+      <div class="overlay">Programming languages are the foundation of every software application. Knowing languages like C, Python, Java, and JavaScript helps turn creative ideas into real-world digital solutions.</div>
+      <h2>Programming Language Proficiency</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://user-images.githubusercontent.com/104568275/186131673-9ffff84c-21b4-421b-b956-643aa0fa7dbd.png" alt="pic of dsa" style="background-color: white;" class="my-image">
+      <div class="overlay">Every great program needs a smart way to handle information. Data structures organize data, while algorithms help solve problems faster and more efficiently.</div>
+      <h2>Data Structures and Algorithms</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/060/576/833/non_2x/nosql-no-sql-database-glyph-solid-icon-vector.jpg" alt="pic of database Management" class="my-image">
+      <div class="overlay">Behind every application is a place where information lives. Database management helps us store, organize, update, and retrieve data whenever it is needed.</div>
+      <h2>Database Management</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-card">
+      <img src="https://static.thenounproject.com/png/1885309-200.png" alt="pic of Testing and Debugging" style="background-color: white;" class="my-image">
+      <div class="overlay">Writing code is only half the journey! Testing helps find problems, while debugging helps fix them and makes sure the application works as expected.</div>
+      <h2>Testing and Debugging</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZZE8-PlXOfBUyITC-2HpJpHsU829sFsThQkRt8TS5YQ&s=10" alt="pic of os" style="background-color: white;" class="my-image">
+      <div class="overlay">An operating system is the bridge between software and hardware. Understanding how it manages memory, processes, and resources helps us understand what happens behind the screen.</div>
+      <h2>Operating Systems Basics</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://images.icon-icons.com/2406/PNG/512/github_git_icon_145985.png" alt="pic of git and git hub" style="background-color: white;" class="my-image">
+      <div class="overlay">Imagine working on a project without losing your previous work! Git tracks every code change, while GitHub makes sharing projects and collaborating with others easier.</div>
+      <h2>Version Control (Git & GitHub)</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/6357/6357632.png" alt="pic of api" style="background-color: white;" class="my-image">
+      <div class="overlay">Applications don't work alone; they communicate with each other. APIs act as messengers, allowing different applications and services to exchange information smoothly.</div>
+      <h2>API and Microservices Development</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDakwdGPUxqgW4LSiBHxtDrCN0z9Jlq3TxnH1XNCi0Jg&s=10" alt="pic of Cloud Computing" style="background-color: white;" class="my-image">
+      <div class="overlay">What if your application could run from anywhere without depending on one computer? Cloud computing makes this possible by providing online storage, computing power, and flexible deployment.</div>
+      <h2>Cloud Computing & Containerization</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://cdn-icons-png.magnific.com/256/16506/16506935.png?semt=ais_white_label" alt="pic of Architecture" style="background-color: white;" class="my-image">
+      <div class="overlay">A powerful application needs more than just good code. System design helps plan how different parts work together to build software that is reliable, organized, and ready to grow.</div>
+      <h2>System Design & Architecture</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/021/841/348/non_2x/ongoing-security-awareness-training-blue-gradient-concept-icon-cybercrime-prevention-reduce-digital-risk-abstract-idea-thin-line-illustration-isolated-outline-drawing-vector.jpg" alt="pic of Security Awareness" class="my-image">
+      <div class="overlay">Every digital system needs protection. Security awareness teaches developers how to protect information, prevent common threats, and build applications that users can trust.</div>
+      <h2>Security Awareness</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT575nyRQIs1OFhl0RQpK_SaISpxVg0st5QVX9E1rCWmg&s=10" alt="pic of Adaptability" class="my-image">
+      <div class="overlay">Technical skills are important, but great developers also know how to share ideas. Clear communication, teamwork, and willingness to learn make a real difference in every project.</div>
+      <h2>Communication and Adaptability</h2>
+    </div>
+    
+    <div class="image-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4fCeGg0tAVQLxVx2yb8F59omWgFGneuyQJXfEfUihA&s=10" alt="pic of Thinking" class="my-image">
+      <div class="overlay">Big problems become easier when we break them into smaller steps. Computational thinking helps us analyze situations, recognize patterns, and develop logical solutions.</div>
+      <h2>Computational Thinking</h2>
+    </div>
+  </div>
+
+</body>
+</html>
